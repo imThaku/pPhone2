@@ -12,6 +12,8 @@ const Notes = React.lazy(() =>
     import  ('./components/app/notes/index'));
 const Bank = React.lazy(() =>
     import  ('./components/app/bank/index'));
+const Repertory = React.lazy(() =>
+    import  ('./components/app/repertory/index'));
 
 const routes = [
     { path: '/', exact: true, component: AppScreen },
@@ -20,6 +22,7 @@ const routes = [
     { path: '/app/messages', component: Messages },
     { path: '/app/notes', component: Notes },
     { path: '/app/bank', exact: true, component: Bank },
+    { path: '/app/repertory', exact: true, component: Repertory },
 ]
 
 export default routes;
